@@ -1,0 +1,83 @@
+variable "region" {
+    default = "us-west-2" 
+}
+variable "availability_zone" {
+    default = ["us-west-2a", "us-west-2b"] 
+}
+#-------------------------------------------EC2
+variable "ami" {
+    default = "ami-***************" 
+}
+variable "ami_wordpress" {
+    default = "ami-***************" 
+}
+variable "key_name" {
+    default = "***************" 
+}
+variable "key_aws" {
+    default = "***************credentials" 
+}
+variable "instance_type" {
+    default = "t2.micro" 
+}
+#-------------------------------------------VPC
+variable "vpc_cidr" {
+    default = "10.0.0.0/16"
+}
+variable "my_cidr" {
+    default = "0.0.0.0/0"
+}
+variable "public_subnet_cidrs" {
+    default = [
+        "10.0.1.0/24",
+        "10.0.2.0/24"
+    ]
+}
+variable "private_subnet_cidrs" {
+    default = [
+        "10.0.11.0/24",
+        "10.0.12.0/24"
+    ]
+}
+variable "databases_subnet_cidrs" {
+    default = [
+        "10.0.21.0/24",
+        "10.0.22.0/24"
+    ]
+}
+#-------------------------------------------DB
+variable "db_type" { 
+    default = "db.t2.micro" 
+}
+variable "db_name" { 
+    default = "***************" 
+}
+variable "db_user_name" { 
+    default = "***************" 
+}
+variable "db_pass" { 
+    default = "***************" 
+}
+#-------------------------------------------DNS
+variable "dns_zone_name" { 
+    default = "***************"
+}
+variable "ssl_certificate" { 
+    default = "arn:aws:***************"
+}
+#-------------------------------------------other
+variable "key" {
+    default = "./***************.pem" 
+}
+variable "key_bastion" {
+    default = "./***************.pem" 
+}
+variable "user_bastion" {
+    default = "***************" 
+}
+variable "owner" {
+    default = "***************" 
+}
+variable "bucket_name" { 
+    default = "***************"
+}
