@@ -1,1 +1,1 @@
-![Demo 1](http://i.piccy.info/i9/dff82001039bd4dd27dac6df017b1f6a/1604075139/74507/1403097/task1.png)
+![schema](./task1.png)
